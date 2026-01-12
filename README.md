@@ -1,3 +1,4 @@
+```markdown
 # 🧠 MindLog: AI-Powered Mental Health Companion
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
@@ -37,35 +38,52 @@ Follow these steps to run the project locally:
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/YOUR_USERNAME/MindLog-AI.git](https://github.com/YOUR_USERNAME/MindLog-AI.git)
+git clone [https://github.com/Nikhil-Codehub/MindLog-AI.git](https://github.com/Nikhil-Codehub/MindLog-AI.git)
 cd MindLog-AI
-2. Create a Virtual Environment (Recommended)
-Bash
 
+```
+
+### 2. Create a Virtual Environment (Recommended)
+
+```bash
 python -m venv venv
 # Windows
 venv\Scripts\activate
 # Mac/Linux
 source venv/bin/activate
-3. Install Dependencies
-Bash
 
+```
+
+### 3. Install Dependencies
+
+```bash
 pip install -r requirements.txt
-4. Set up API Keys
-Create a .env file in the root directory and add your Groq API Key:
 
-Code snippet
+```
 
+### 4. Set up API Keys
+
+Create a `.env` file in the root directory and add your Groq API Key:
+
+```env
 GROQ_API_KEY=gsk_your_api_key_here
-(Get your free key from console.groq.com)
 
-5. Run the App
-Bash
+```
 
+*(Get your free key from [console.groq.com](https://console.groq.com))*
+
+### 5. Run the App
+
+```bash
 streamlit run app.py
-📂 Project Structure
-Bash
 
+```
+
+---
+
+## 📂 Project Structure
+
+```bash
 MindLog-AI/
 ├── src/
 │   ├── chatbot.py       # Handles Llama 3 API calls
@@ -75,25 +93,57 @@ MindLog-AI/
 ├── requirements.txt     # Python dependencies
 ├── .env                 # API Keys (Not uploaded to GitHub)
 └── README.md            # Project Documentation
-📸 Screenshots
-(Add screenshots of your app here. Example: A view of the chat interface and the mood graph)
 
-🔮 Future Improvements
-[ ] Voice Support: Allow users to speak their diary entries.
+```
 
-[ ] Emergency Alerts: Hard-coded trigger for helpline numbers if suicide risk is detected.
+---
 
-[ ] RAG Integration: Use Vector DB to remember long-term context of the user's life.
+## 📸 Screenshots
+![Dashboard](assets/dashboard.png)
+---
 
-[ ] User Authentication: Multi-user login system.
+## 🔮 Future Improvements
 
-🤝 Contributing
+* [ ] **Voice Support:** Allow users to speak their diary entries.
+* [ ] **Emergency Alerts:** Hard-coded trigger for helpline numbers if suicide risk is detected.
+* [ ] **RAG Integration:** Use Vector DB to remember the long-term context of the user's life.
+* [ ] **User Authentication:** Multi-user login system.
+
+---
+
+## 🤝 Contributing
+
 Contributions are welcome! Please fork the repository and create a pull request.
 
-📄 License
+## 📄 License
+
 This project is licensed under the MIT License.
 
-Disclaimer: MindLog is an AI tool for self-reflection and screening assistance. It is NOT a substitute for professional medical diagnosis or treatment.
-## 📸 Screenshots
+---
 
-![MindLog Dashboard](assets/dashboard.png)
+**Disclaimer:** *MindLog is an AI tool for self-reflection and screening assistance. It is NOT a substitute for professional medical diagnosis or treatment.*
+
+```
+
+---
+
+### **Final Step: Save & Push (Error Fix)**
+
+Kyunki pichli baar `git push` fail hua tha, ab ye steps follow karein:
+
+1.  **File Save:** Upar wala code `README.md` mein paste karke save karein (`Ctrl+S`).
+2.  **Pull (Updates lene ke liye):**
+    ```bash
+    git pull origin main --allow-unrelated-histories
+    ```
+    *(Agar editor khule toh `:q` dabayein).*
+3.  **Push (Code bhejne ke liye):**
+    ```bash
+    git add README.md
+    git commit -m "Fixed README formatting"
+    git push -u origin main
+    ```
+
+Ab GitHub check karein, aapka project ekdam professional dikhega! 🚀
+
+```

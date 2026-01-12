@@ -1,0 +1,24 @@
+
+.env
+
+
+# --- Database 
+*.db
+*.sqlite3
+mindlog.db
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Virtual Environments
+myenv/
+venv/
+env/
+.venv/
+
+# --- IDE Settings
+.vscode/
+.idea/
+.DS_Store
